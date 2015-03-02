@@ -7,9 +7,9 @@ compass:
   # an avatar or logo (optional)
   logo: "/images/compass.png"
   # author will appear under the avatar (optional)
-  author: "厦门金华达工程咨询有限公司"
+  author: "湖南至尊葛王葛业开发有限公司"
   # tagline will appear under the title (optional)
-  tagline: "Xiamen Jinhuada Engineering Consulting Co., Ltd."
+  tagline: "Hunan Zhizungewang Puerarin Development Co., Ltd."
   # if include_content is true, the contents of the content.html include will be
   # added right above the generated item list, if present
   include_content: true
