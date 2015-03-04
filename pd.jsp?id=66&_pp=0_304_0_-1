@@ -1,0 +1,427 @@
+
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" class="g_html">
+
+<head>
+<title>生产车间 - zhizungewang</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta name="renderer" content="webkit">
+
+
+<meta name="mobile-agent" content="format=html5;url=http://m.zhizungewang.com/pd.jsp?pid=66"/>
+
+<link rel='canonical' href='pd.jsp?id=66'>
+
+<link type="text/css" href="http://0.ss.faidns.com/css/base.min.css?v=201503021753" rel="stylesheet" />
+<link type="text/css" href="http://0.ss.faidns.com/css/template/399.min.css?v=201501201112" rel="stylesheet" id="templateFrame"  class="templateFrameClass"/>
+
+
+
+
+
+
+
+<meta name="keywords" content="至尊葛王，湖南至尊葛王葛业开发有新公司，葛根汁饮料，葛根粉,葛根,生产车间"/>
+<meta name="description" content="湖南至尊葛王葛业开发有限公司（前生为长沙乐汁源食品有限公司）是一家专业生产葛系列饮料、植物提取研发、销售为一体的科技型公司，公司现有员工一百余名，设有专门的研发机构和种植生产基地。<br/> &nbsp;&nbsp;目前已开发出具有国家专利的葛根汁系列【葛根汁产品专利升级号：201410186077.2】葛根粉系列、葛根提取物系列等多个产品。现在已经和校园代购代送网（www.daigoudaisong.com)进行合作"/>
+
+
+<style id='stylemodule'>
+#module308 {height:232px;}
+#module308 .g_sideBtn_tl{font-size:15px;}
+#module308 .g_sideBtn_tl{font-weight:normal;}
+#module308 .g_sideBtn_tl{font-family:SimSun;}
+#module308 .g_sideBtn_tl{color:#ffffff;}
+</style>
+<style id='styleHeaderTop' type='text/css'>
+</style>
+<style id='stylefooter' type='text/css'>
+</style>
+<style id='styleWebSite' type='text/css'>
+</style>
+<style id='stylenav' type='text/css'>
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body class="g_body g_locale2052 " >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+<script language="javascript" type="text/javascript">
+	function onLogout(){
+		$('#topBarMsg').show();
+		$('#topBarMsg').html('正在退出系统...');
+		$.ajax({
+			type: 'post',
+			url: 'ajax/login_h.jsp?cmd=logoutMember',
+			error: function(){
+				alert('退出系统失败');
+				$('#topBarMsg').hide();
+			},
+			success: function(result){
+				var result = jQuery.parseJSON(result);
+				if(result.success){
+					top.location.href = 'index.jsp';
+					return;
+				}
+				$('#topBarMsg').html('退出系统失败');
+			}
+		});
+	}
+</script>
+<div id="memberBarArea" class="memberBarArea g_editPanel" >
+	<div id="arrow" class="g_arrow g_arrow_up"></div>
+	<div id="memberBar" class="memberBar">
+		<div class="left">
+
+			<div style="float:left;">
+				<span class="memberHello">您好，请</span>
+				<a class="memberOption" href="http://www.zhizungewang.com/login.jsp" >[登录]</a>
+				<a class="memberOption" href="signup.jsp" >[注册]</a>
+			</div>
+
+
+		
+
+
+
+		</div>
+
+		<div id="topBarMsg" style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:#eee; text-align:center; z-index: 9010;"></div>
+	</div>
+</div>
+
+	 
+
+
+
+	<div id="g_main" class='g_main g_col8 ' style='top:30px' >
+	<div id="web" class="g_web ">
+		<table class="webTopTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="webTop" class="webTop">
+						  
+	<div id="corpTitle" class="corpTitle corpTitle2" fontPatternTitle="true" style=";"  _linkType="0" >
+		<div id="primaryTitle" style="color: #ffffff;pointer-events:none;">湖南至尊葛王葛业开发有限公司</div>
+		<div id="subTitle" style=""></div>
+	</div>
+
+						
+
+
+						
+						<div id='logo' class='logo logo2' style='top:1px;left:-103px;'><a id='logoLink' hidefocus='true' class='link-p' link='javascript:;'><img id='logoImg' title='zhizungewang' alt='zhizungewang' style='float:left;' height='100'width='100' src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg3svJnQUo25TPJDCQATiSAQ!100x100.jpg' /></a></div>
+
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<table class="absTopTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="absTopForms" class="forms sideForms absForms">
+						<div style="position:absolute;"></div><!-- for ie6 -->
+						
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table class="webNavTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="webNav" class="webNav">
+						
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table class="webHeaderTable" cellpadding="0" cellspacing="0" id="webHeaderTable">
+			<tr>
+				<td align="center" class="webHeaderTd">
+					<div id="webHeader" class="webHeader">
+						<table class='headerTable' cellpadding='0' cellspacing='0'>
+							<tr>
+								<td class='headerCusLeft'></td>
+								<td class='headerCusMiddle' align='center' valign='top'>
+									<div class='headerNav'>
+								
+									</div>
+								</td>
+								<td class='headerCusRight'></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<table class="webBannerTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="webBanner" class="webBanner">
+						<table class="bannerTable" cellpadding="0" cellspacing="0">
+							<tr>
+								<td class="bannerLeft"></td>
+								<td class="bannerCenter" align='center' valign='top'>
+									<div class='bannerTop'></div>
+<div id='banner' class='banner banner399_0 extBanner' style=''  normalheight='-1' defaultwidth='960'>
+	<div class='banner banner399_0 defaultBannerMain' style=''></div>
+	<div class='defaultBannerEdge defaultBannerEdgeRight'></div>
+	<div class='defaultBannerEdge defaultBannerEdgeLeft'></div>
+</div>
+
+									<div id='nav' class='nav nav2'>
+<div class='navMainContent'><table class='navTop' cellpadding='0' cellspacing='0'><tr><td class='navTopLeft'></td><td class='navTopCenter'></td><td class='navTopRight'></td></tr></table>
+<table class='navContent' cellpadding='0' cellspacing='0'>
+<tr>
+<td class='navLeft'></td>
+<td class='navCenterContent' id='navCenterContent' valign='top' align='left'>
+<div id='navCenter' class='navCenter' style='width:676px;'>
+<div class='itemPrev'></div>
+<div class='itemContainer'>
+<table class='item itemCol2 itemIndex1' cellpadding='0' cellspacing='0' colId='2' id='nav2' onclick='document.location.href="/"'  _jump='document.location.href="/"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='index.html' onclick='return false;'><span class='itemName0'>首页</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+<div class='itemSep'></div><table class='item itemCol3 itemIndex2' cellpadding='0' cellspacing='0' colId='3' id='nav3' onclick='document.location.href="/pl.jsp"'  _jump='document.location.href="/pl.jsp"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='pl.jsp' onclick='return false;'><span class='itemName0'>产品展示</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+<div class='itemSep'></div><table class='item itemCol4 itemIndex3' cellpadding='0' cellspacing='0' colId='4' id='nav4' onclick='document.location.href="/nl.jsp"'  _jump='document.location.href="/nl.jsp"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='nl.jsp' onclick='return false;'><span class='itemName0'>新闻动态</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+<div class='itemSep'></div><table class='item itemCol9 itemIndex4' cellpadding='0' cellspacing='0' colId='9' id='nav9' onclick='document.location.href="/msgBoard.jsp"'  _jump='document.location.href="/msgBoard.jsp"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='msgBoard.jsp' onclick='return false;'><span class='itemName0'>留言板</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+<div class='itemSep'></div><table class='item itemCol101 itemIndex5' cellpadding='0' cellspacing='0' colId='101' id='nav101' onclick='document.location.href="/col.jsp?id=101"'  _jump='document.location.href="/col.jsp?id=101"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='col.jsp?id=101' onclick='return false;'><span class='itemName0'>关于我们</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+<div class='itemSep'></div><table class='item itemCol102 itemIndex6' cellpadding='0' cellspacing='0' colId='102' id='nav102' onclick='document.location.href="/col.jsp?id=102"'  _jump='document.location.href="/col.jsp?id=102"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='col.jsp?id=102' onclick='return false;'><span class='itemName0'>联系我们</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+</div>
+<div class='itemNext'></div>
+</div>
+</td>
+<td class='navRight'></td>
+</tr>
+</table>
+<table class='navBottom' cellpadding='0' cellspacing='0'><tr><td class='navBottomLeft'></td><td class='navBottomCenter'></td><td class='navBottomRight'></td></tr></table>
+</div>
+</div>
+
+								</td>
+								<td class="bannerRight"></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<table class="absMiddleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="absForms" class="forms sideForms absForms">
+						
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+		<div id="fullmeasureTopForms" class="fullmeasureContainer forms sideForms fullmeasureForms fullmeasureTopForms" style='display:none'>
+			
+		</div>
+		
+		
+		
+		<table id="webContainerTable" class="webContainerTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="webContainer" class="webContainer">
+						<div id="container" class="container">
+	<table class="containerTop" cellpadding='0' cellspacing='0'>
+		<tr valign='top'>
+			<td class="left"></td>
+			<td class="center"></td>
+			<td class="right"></td>
+		</tr>
+	</table>
+
+	<table class="containerMiddle" cellpadding='0' cellspacing='0'>
+		<tr valign='top'>
+			<td id="containerMiddleLeft" class="containerMiddleLeft">
+					
+					
+					
+					
+			</td>
+
+			<td class="containerMiddleCenter">
+				<div id="containerMiddleCenterTop" class="containerMiddleCenterTop">
+					
+				</div>
+
+				<div id="containerForms" class="containerForms">
+					<div id="topForms" class="column forms mainForms topForms" style='display:none'>
+						
+					</div>
+
+					<table class="containerFormsMiddle" cellpadding='0' cellspacing='0'>
+						<tr>
+							<td valign="top" id="containerFormsLeft" class="containerFormsLeft" >
+								<div class="containerFormsLeftTop">
+								</div>
+								<div id="leftForms" class="column forms sideForms leftForms">
+									<div id='module304' _indexClass='formIndex1' class='form form304 formIndex1 formStyle26' title='' style='' _side='0' _inTab='0' _inMulMCol='0' _inFullmeasure='0' _autoHeight='1' _global='true' _independent='false' >
+<table class='formTop formTop304' cellpadding='0' cellspacing='0'><tr><td class='left'></td><td class='center'></td><td class='right'></td></tr></table>
+<table class='formBanner formBanner304' cellpadding='0' cellspacing='0'><tr>
+<td class='left left304'></td>
+<td class='center center304' valign='top'>
+<table cellpadding='0' cellspacing='0' class='formBannerTitle formBannerTitle304'><tr>
+<td class='titleLeft titleLeft304' valign='top'>
+</td>
+<td class='titleCenter titleCenter304' valign='top'>
+<div class='titleText titleText304'><span>
+产品分类</span></div>
+</td>
+<td class='titleRight titleRight304' valign='top'>
+</td>
+</tr></table>
+</td>
+<td class='right right304'></td>
+</tr></table>
+<table class='formMiddle formMiddle304' style='' cellpadding='0' cellspacing='0'><tr>
+<td class='formMiddleLeft formMiddleLeft304'></td>
+<td class='formMiddleCenter formMiddleCenter304' valign='top'>
+<div class='formMiddleContent formMiddleContent304  '>
+<div class=' g_foldContainer g_vertFold g_foldNOBtn'><table class='g_foldContainerTop' cellpadding='0' cellspacing='0'><tr>
+<td class='g_foldContainerTopLeft'></td>
+<td class='g_foldContainerTopCenter'></td>
+<td class='g_foldContainerTopRight'></td>
+</tr></table>
+<table class='g_foldContainerContent' cellpadding='0' cellspacing='0'><tr>
+<td class='g_foldContainerContentLeft'></td>
+<td class='g_foldContainerContentCenter'>
+<table class='g_foldContainerPanel' cellpadding='0' cellspacing='0'><tr>
+<td class='g_foldContainerPanelLeft'></td>
+<td class='g_foldContainerPanelCenter'>
+<table foldId='1' class='g_foldContainerValue fold_J fold_h_J' cellpadding='0' cellspacing='0'><tr>
+<td class='productFilterValueLeft contentLineIcon'></td>
+<td class='g_foldContainerValueCenter' style='*padding:0;'>
+<a hidefocus='true' href='pr.jsp?_pp=0_304_1_-1' title='分类1' >分类1</a>
+</td>
+<td class='g_foldContainerValueRight'></td>
+</tr></table>
+</td>
+<td class='g_foldContainerPanelRight'></td>
+</tr></table>
+<div class='g_foldSepLine g_foldPLine g_separator'></div>
+<table class='g_foldContainerPanel' cellpadding='0' cellspacing='0'><tr>
+<td class='g_foldContainerPanelLeft'></td>
+<td class='g_foldContainerPanelCenter'>
+<table foldId='2' class='g_foldContainerValue fold_J fold_h_J' cellpadding='0' cellspacing='0'><tr>
+<td class='productFilterValueLeft contentLineIcon'></td>
+<td class='g_foldContainerValueCenter' style='*padding:0;'>
+<a hidefocus='true' href='pr.jsp?_pp=0_304_2_-1' title='分类2' >分类2</a>
+</td>
+<td class='g_foldContainerValueRight'></td>
+</tr></table>
+</td>
+<td class='g_foldContainerPanelRight'></td>
+</tr></table>
+<div class='g_foldSepLine g_foldPLine g_separator'></div>
+<table class='g_foldContainerPanel' cellpadding='0' cellspacing='0'><tr>
+<td class='g_foldContainerPanelLeft'></td>
+<td class='g_foldContainerPanelCenter'>
+<table foldId='3' class='g_foldContainerValue fold_J fold_h_J' cellpadding='0' cellspacing='0'><tr>
+<td class='productFilterValueLeft contentLineIcon'></td>
+<td class='g_foldContainerValueCenter' style='*padding:0;'>
+<a hidefocus='true' href='pr.jsp?_pp=0_304_3_-1' title='喜扣系列' >喜扣系列</a>
+</td>
+<td class='g_foldContainerValueRight'></td>
+</tr></table>
+</td>
+<td class='g_foldContainerPanelRight'></td>
+</tr></table>
+<div class='g_foldSepLine g_foldPLine g_separator'></div>
+<table class='g_foldContainerPanel' cellpadding='0' cellspacing='0'><tr>
+<td class='g_foldContainerPanelLeft'></td>
+<td class='g_foldContainerPanelCenter'>
+<table foldId='4' class='g_foldContainerValue fold_J fold_h_J' cellpadding='0' cellspacing='0'><tr>
+<td class='productFilterValueLeft contentLineIcon'></td>
+<td class='g_foldContainerValueCenter' style='*padding:0;'>
+<a hidefocus='true' href='pr.jsp?_pp=0_304_4_-1' title='至尊葛王' >至尊葛王</a>
+</td>
+<td class='g_foldContainerValueRight'></td>
+</tr></table>
+</td>
+<td class='g_foldContainerPanelRight'></td>
+</tr></table>
+<div class='g_foldSepLine g_foldPLine g_separator'></div>
+<table class='g_foldContainerPanel' cellpadding='0' cellspacing='0'><tr>
+<td class='g_foldContainerPanelLeft'></td>
+<td class='g_foldContainerPanelCenter'>
+<table foldId='5' class='g_foldContainerValue fold_J fold_h_J' cellpadding='0' cellspacing='0'><tr>
+<td class='productFilterValueLeft contentLineIcon'></td>
+<td class='g_foldContainerValueCenter' style='*padding:0;'>
+<a hidefocus='true' href='pr.jsp?_pp=0_304_5_-1' title='葛根露' >葛根露</a>
+</td>
+<td class='g_foldContainerValueRight'></td>
+</tr></table>
+</td>
+<td class='g_foldContainerP

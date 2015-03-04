@@ -1,27 +1,1814 @@
----
-layout: base
----
-<div class="wrapper">
-    <header>
-        {% if site.compass.logo %}
-        <div class="logo-container">
-          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
-        </div>
-        {% endif %}
 
-        {% if site.compass.author %}
-        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
-        {% endif %}
+<!DOCTYPE HTML>
 
-        {% if site.compass.tagline %}
-        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
-        {% endif %}
-    </header>
-    <main>
-      {% if site.compass.include_content %}
-      <div class="content">
-        {% include content.html %}
-      </div>
-      {% endif %}
-    </main>
+<html xmlns="http://www.w3.org/1999/xhtml" class="g_html">
+
+<head>
+<title>zhizungewang</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta name="renderer" content="webkit">
+
+
+<meta name="mobile-agent" content="format=html5;url=http://m.zhizungewang.com/"/>
+
+<link rel='canonical' href='index.html'>
+
+<link type="text/css" href="http://0.ss.faidns.com/css/base.min.css?v=201503021753" rel="stylesheet" />
+<link type="text/css" href="http://0.ss.faidns.com/css/template/399.min.css?v=201501201112" rel="stylesheet" id="templateFrame"  class="templateFrameClass"/>
+
+
+
+
+<link type="text/css" href="http://0.ss.faidns.com/css/pattern4.min.css?v=201501201112" rel="stylesheet">
+		
+
+
+
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+
+
+<style id='stylemodule'>
+#module301 .formBanner301{height:24px;}
+#module301 .formBanner301{line-height:24px;}
+#module301 .formBanner301 td{height:24px;}
+#module301 .formBanner301 td{line-height:24px;}
+#module301 .formBanner301 table{height:24px;}
+#module301 .formBanner301 table{line-height:24px;}
+#module301 .formBanner301 div{height:24px;}
+#module301 .formBanner301 div{line-height:24px;}
+#module301 .titleText301{font-size:19px;}
+#module301 .titleText301{font-weight:bolder;}
+#module301 .titleCenter301{overflow:visible;}
+#module301 .titleText301 span{left:0px;}
+#module301 .titleText301 span{top:0px;}
+#module301 .titleText301{font-family:SimSun;}
+#module301 .formMiddle301{font-family:SimSun;}
+#module301 .formMiddle301 .pic-mixNewsStyleSummary{font-family:SimSun;}
+#module301 .formMiddle301 .memberLoginItem{font-family:SimSun;}
+#module301 .formMiddle301 .g_minor{color:#000000;}
+#module301 .formMiddle301 .g_specialClass{color:#000000;}
+#module301 .formMiddle301 .formMiddleContent{color:#000000;}
+#module301 .formMiddle301 .formMiddleContent .pic-mixNewsStyleSummary{color:#000000;}
+#module301 .formMiddle301 .productFilterNameCenter{color:#000000;}
+#module301 .title{font-size:12px;}
+#module301 .formMiddle301{font-size:12px;}
+#module301 .formMiddle301 .pic-mixNewsStyleSummary{font-size:12px;}
+#module301 .formMiddle301 .productFilterNameCenter{font-size:12px;}
+#module301 .formMiddle301 .memberLoginItem{font-size:12px;}
+#module301 {background:none;}
+#module301 .formMiddle301 {background:#ffffff ;}
+#module301 .formMiddle301 .formMiddleCenter301{background:none;}
+#module301 .formMiddleContent301{background:none;}
+#module308 {height:232px;}
+#module308 .g_sideBtn_tl{font-size:15px;}
+#module308 .g_sideBtn_tl{font-weight:normal;}
+#module308 .g_sideBtn_tl{font-family:SimSun;}
+#module308 .g_sideBtn_tl{color:#ffffff;}
+#module325 {height:162px;}
+#module325 .g_sideBtn_tl{font-size:15px;}
+#module325 .g_sideBtn_tl{font-weight:normal;}
+#module325 .g_sideBtn_tl{font-family:SimSun;}
+</style>
+<style id='styleHeaderTop' type='text/css'>
+</style>
+<style id='stylefooter' type='text/css'>
+</style>
+<style id='styleWebSite' type='text/css'>
+</style>
+<style id='stylenav' type='text/css'>
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body class="g_body g_locale2052 " >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+<script language="javascript" type="text/javascript">
+	function onLogout(){
+		$('#topBarMsg').show();
+		$('#topBarMsg').html('正在退出系统...');
+		$.ajax({
+			type: 'post',
+			url: 'ajax/login_h.jsp?cmd=logoutMember',
+			error: function(){
+				alert('退出系统失败');
+				$('#topBarMsg').hide();
+			},
+			success: function(result){
+				var result = jQuery.parseJSON(result);
+				if(result.success){
+					top.location.href = 'index.jsp';
+					return;
+				}
+				$('#topBarMsg').html('退出系统失败');
+			}
+		});
+	}
+</script>
+<div id="memberBarArea" class="memberBarArea g_editPanel" >
+	<div id="arrow" class="g_arrow g_arrow_up"></div>
+	<div id="memberBar" class="memberBar">
+		<div class="left">
+
+			<div style="float:left;">
+				<span class="memberHello">您好，请</span>
+				<a class="memberOption" href="http://www.zhizungewang.com/login.jsp" >[登录]</a>
+				<a class="memberOption" href="signup.jsp" >[注册]</a>
+			</div>
+
+
+		
+
+
+
+		</div>
+
+		<div id="topBarMsg" style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:#eee; text-align:center; z-index: 9010;"></div>
+	</div>
 </div>
+
+	 
+
+
+
+	<div id="g_main" class='g_main g_col2 ' style='top:30px' >
+	<div id="web" class="g_web ">
+		<table class="webTopTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="webTop" class="webTop">
+						  
+	<div id="corpTitle" class="corpTitle corpTitle2" fontPatternTitle="true" style=";"  _linkType="0" >
+		<div id="primaryTitle" style="color: #ffffff;pointer-events:none;">湖南至尊葛王葛业开发有限公司</div>
+		<div id="subTitle" style=""></div>
+	</div>
+
+						
+
+
+						
+						<div id='logo' class='logo logo2' style='top:1px;left:-103px;'><a id='logoLink' hidefocus='true' class='link-p' link='javascript:;'><img id='logoImg' title='zhizungewang' alt='zhizungewang' style='float:left;' height='100'width='100' src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg3svJnQUo25TPJDCQATiSAQ!100x100.jpg' /></a></div>
+
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<table class="absTopTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="absTopForms" class="forms sideForms absForms">
+						<div style="position:absolute;"></div><!-- for ie6 -->
+						
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table class="webNavTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="webNav" class="webNav">
+						
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table class="webHeaderTable" cellpadding="0" cellspacing="0" id="webHeaderTable">
+			<tr>
+				<td align="center" class="webHeaderTd">
+					<div id="webHeader" class="webHeader">
+						<table class='headerTable' cellpadding='0' cellspacing='0'>
+							<tr>
+								<td class='headerCusLeft'></td>
+								<td class='headerCusMiddle' align='center' valign='top'>
+									<div class='headerNav'>
+								
+									</div>
+								</td>
+								<td class='headerCusRight'></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<table class="webBannerTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="webBanner" class="webBanner">
+						<table class="bannerTable" cellpadding="0" cellspacing="0">
+							<tr>
+								<td class="bannerLeft"></td>
+								<td class="bannerCenter" align='center' valign='top'>
+									<div class='bannerTop'></div>
+<div id='banner' class='banner banner399_0 extBanner' style=''  normalheight='-1' defaultwidth='960'>
+	<div class='banner banner399_0 defaultBannerMain' style=''></div>
+	<div class='defaultBannerEdge defaultBannerEdgeRight'></div>
+	<div class='defaultBannerEdge defaultBannerEdgeLeft'></div>
+</div>
+
+									<div id='nav' class='nav nav2'>
+<div class='navMainContent'><table class='navTop' cellpadding='0' cellspacing='0'><tr><td class='navTopLeft'></td><td class='navTopCenter'></td><td class='navTopRight'></td></tr></table>
+<table class='navContent' cellpadding='0' cellspacing='0'>
+<tr>
+<td class='navLeft'></td>
+<td class='navCenterContent' id='navCenterContent' valign='top' align='left'>
+<div id='navCenter' class='navCenter' style='width:676px;'>
+<div class='itemPrev'></div>
+<div class='itemContainer'>
+<table class='item itemCol2 itemIndex1' cellpadding='0' cellspacing='0' colId='2' id='nav2' onclick='document.location.href="/"'  _jump='document.location.href="/"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='index.html' onclick='return false;'><span class='itemName0'>首页</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+<div class='itemSep'></div><table class='item itemCol3 itemIndex2' cellpadding='0' cellspacing='0' colId='3' id='nav3' onclick='document.location.href="/pl.jsp"'  _jump='document.location.href="/pl.jsp"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='pl.jsp' onclick='return false;'><span class='itemName0'>产品展示</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+<div class='itemSep'></div><table class='item itemCol4 itemIndex3' cellpadding='0' cellspacing='0' colId='4' id='nav4' onclick='document.location.href="/nl.jsp"'  _jump='document.location.href="/nl.jsp"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='nl.jsp' onclick='return false;'><span class='itemName0'>新闻动态</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+<div class='itemSep'></div><table class='item itemCol9 itemIndex4' cellpadding='0' cellspacing='0' colId='9' id='nav9' onclick='document.location.href="/msgBoard.jsp"'  _jump='document.location.href="/msgBoard.jsp"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='msgBoard.jsp' onclick='return false;'><span class='itemName0'>留言板</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+<div class='itemSep'></div><table class='item itemCol101 itemIndex5' cellpadding='0' cellspacing='0' colId='101' id='nav101' onclick='document.location.href="/col.jsp?id=101"'  _jump='document.location.href="/col.jsp?id=101"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='col.jsp?id=101' onclick='return false;'><span class='itemName0'>关于我们</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+<div class='itemSep'></div><table class='item itemCol102 itemIndex6' cellpadding='0' cellspacing='0' colId='102' id='nav102' onclick='document.location.href="/col.jsp?id=102"'  _jump='document.location.href="/col.jsp?id=102"' >
+<tr>
+<td class='itemLeft'></td>
+<td class='itemCenter'><a hidefocus='true' style='outline:none;' href='col.jsp?id=102' onclick='return false;'><span class='itemName0'>联系我们</span></a></td>
+<td class='itemRight'></td>
+</tr>
+</table>
+</div>
+<div class='itemNext'></div>
+</div>
+</td>
+<td class='navRight'></td>
+</tr>
+</table>
+<table class='navBottom' cellpadding='0' cellspacing='0'><tr><td class='navBottomLeft'></td><td class='navBottomCenter'></td><td class='navBottomRight'></td></tr></table>
+</div>
+</div>
+
+								</td>
+								<td class="bannerRight"></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<table class="absMiddleTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="absForms" class="forms sideForms absForms">
+						
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+		<div id="fullmeasureTopForms" class="fullmeasureContainer forms sideForms fullmeasureForms fullmeasureTopForms" style='display:none'>
+			
+		</div>
+		
+		
+		
+		<table id="webContainerTable" class="webContainerTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="webContainer" class="webContainer">
+						<div id="container" class="container">
+	<table class="containerTop" cellpadding='0' cellspacing='0'>
+		<tr valign='top'>
+			<td class="left"></td>
+			<td class="center"></td>
+			<td class="right"></td>
+		</tr>
+	</table>
+
+	<table class="containerMiddle" cellpadding='0' cellspacing='0'>
+		<tr valign='top'>
+			<td id="containerMiddleLeft" class="containerMiddleLeft">
+					
+					
+					
+					
+			</td>
+
+			<td class="containerMiddleCenter">
+				<div id="containerMiddleCenterTop" class="containerMiddleCenterTop">
+					
+				</div>
+
+				<div id="containerForms" class="containerForms">
+					<div id="topForms" class="column forms mainForms topForms" >
+						<div id='module302' _indexClass='formIndex1' class='form form302 formIndex1 formStyle1' title='' style='' _side='0' _inTab='0' _inMulMCol='0' _inFullmeasure='0' _autoHeight='1' _global='true' _independent='false' >
+<table class='formTop formTop302' cellpadding='0' cellspacing='0'><tr><td class='left'></td><td class='center'></td><td class='right'></td></tr></table>
+<table class='formBanner formBanner302' cellpadding='0' cellspacing='0'><tr>
+<td class='left left302'></td>
+<td class='center center302' valign='top'>
+<table cellpadding='0' cellspacing='0' class='formBannerTitle formBannerTitle302'><tr>
+<td class='titleLeft titleLeft302' valign='top'>
+</td>
+<td class='titleCenter titleCenter302' valign='top'>
+<div class='titleText titleText302'><span>
+联系方式</span></div>
+</td>
+<td class='titleRight titleRight302' valign='top'>
+</td>
+</tr></table>
+</td>
+<td class='right right302'></td>
+</tr></table>
+<table class='formMiddle formMiddle302' style='' cellpadding='0' cellspacing='0'><tr>
+<td class='formMiddleLeft formMiddleLeft302'></td>
+<td class='formMiddleCenter formMiddleCenter302' valign='top'>
+<div class='formMiddleContent formMiddleContent302  '>
+<div class='richContent richContent0'><p><strong>联系人</strong>：徐先生　　　　　　　　　<strong style="line-height:1.8;">联系人：</strong><span style="line-height:1.8;">丁先生</span>　</p><p><strong>电　话</strong>：13585264954 &nbsp; <span style="line-height:1.8;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>电　</strong></span><strong style="line-height:1.8;">话：</strong><span style="line-height:1.8;">15111160971</span></p><p><strong><span style="line-height:1.8;">电　话</span></strong><span style="line-height:1.8;">：0731-85598748（王小姐） &nbsp;</span></p><p><strong style="line-height:1.8;">邮　箱</strong><span style="line-height:1.8;">：286517247@qq.com</span><br /></p><p><strong>地　址</strong>：湖南省长沙市天心区芙蓉中路266号弘林国际大厦1505室</p><p><br /></p></div></div>
+</td>
+<td class='formMiddleRight formMiddleRight302'></td>
+</tr></table>
+<table class='formBottom formBottom302' cellpadding='0' cellspacing='0'><tr><td class='left left302'></td><td class='center center302'></td><td class='right right302'></td></tr></table>
+<div class='clearfloat clearfloat302'></div>
+</div>
+
+
+					</div>
+
+					<table class="containerFormsMiddle" cellpadding='0' cellspacing='0'>
+						<tr>
+							<td valign="top" id="containerFormsLeft" class="containerFormsLeft" style='display:none'>
+								<div class="containerFormsLeftTop">
+								</div>
+								<div id="leftForms" class="column forms sideForms leftForms">
+									
+								</div>
+								<div class="containerFormsLeftBottom">
+								</div>
+							</td>
+
+							<td valign="top" id="containerFormsCenter" class="containerFormsCenter">
+					
+								<div id="centerTopForms" class="column forms mainForms centerTopForms" >
+									<div id='module301' _indexClass='formIndex1' class='form form301 formIndex1 formStyle1' title='' style='' _side='0' _inTab='0' _inMulMCol='0' _inFullmeasure='0' _autoHeight='1' _global='false' _independent='false' >
+<table class='formTop formTop301' cellpadding='0' cellspacing='0'><tr><td class='left'></td><td class='center'></td><td class='right'></td></tr></table>
+<table class='formBanner formBanner301' cellpadding='0' cellspacing='0'><tr>
+<td class='left left301'></td>
+<td class='center center301' valign='top'>
+<table cellpadding='0' cellspacing='0' class='formBannerTitle formBannerTitle301'><tr>
+<td class='titleLeft titleLeft301' valign='top'>
+</td>
+<td class='titleCenter titleCenter301' valign='top'>
+<div class='titleText titleText301'><span>
+公司简介</span></div>
+</td>
+<td class='titleRight titleRight301' valign='top'>
+</td>
+</tr></table>
+</td>
+<td class='right right301'></td>
+</tr></table>
+<table class='formMiddle formMiddle301' style='' cellpadding='0' cellspacing='0'><tr>
+<td class='formMiddleLeft formMiddleLeft301'></td>
+<td class='formMiddleCenter formMiddleCenter301' valign='top'>
+<div class='formMiddleContent formMiddleContent301  '>
+<div class='richModuleSlaveImgContainer textImg1'><img class='richModuleSlaveImg' alt='公司简介' title='公司简介' src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgrOzTnQUokNCm7gUwwQQ48AI!450x450.jpg'  style='width:283px;height:180px;' /><div class='richEditPic' _onMouseIn='0' onclick='Site.changeRichPic(301);return false;'><a class='edit' id='uploadButton' title='编辑图片'></a></div></div><div class='richContent richContent1'><p><span style="background-color:#ffffff;font-size:18px;line-height:1.8;">　　湖南至尊葛王葛业开发有限公司（前身为长沙乐汁源食品有限公司）是一家集生产、种植、研发、销售为一体的科技研发公司，公司现有员工一百余名，设有专门的研发机构和生产种植基地。</span><br /></p><p><span style="background-color:#ffffff;font-size:18px;"> &nbsp; &nbsp;目前已开发出具有国家专利的葛根系列产品【产品专利号：201410186077.2】葛根汁系列、葛根露等多个产品。</span></p><p><span style="background-color:#ffffff;font-size:18px;"> &nbsp; &nbsp;公司以“绿色环保，健康养生”为目标，致力于</span><span style="background-color:#ffffff;font-size:18px;"><a href="nd.jsp?id=6" target="_self" title="查看更多" style="text-decoration:underline;color:#ff0000;"><span style="background-color:#ffffff;font-size:18px;color:#ff0000;">查看更多</span></a></span></p><p><br /></p></div></div>
+</td>
+<td class='formMiddleRight formMiddleRight301'></td>
+</tr></table>
+<table class='formBottom formBottom301' cellpadding='0' cellspacing='0'><tr><td class='left left301'></td><td class='center center301'></td><td class='right right301'></td></tr></table>
+<div class='clearfloat clearfloat301'></div>
+</div>
+
+<div id='module306' _indexClass='formIndex2' class='form form306 formIndex2 formStyle3 modulePattern modulePattern64' title='' style='' _side='0' _inTab='0' _inMulMCol='0' _inFullmeasure='0' _autoHeight='1' _global='false' _independent='false' >
+<table class='formTop formTop306' cellpadding='0' cellspacing='0'><tr><td class='left'></td><td class='center'></td><td class='right'></td></tr></table>
+<table class='formBanner formBanner306' cellpadding='0' cellspacing='0'><tr>
+<td class='left left306'></td>
+<td class='center center306' valign='top'>
+<table cellpadding='0' cellspacing='0' class='formBannerTitle formBannerTitle306'><tr>
+<td class='titleLeft titleLeft306' valign='top'>
+</td>
+<td class='titleCenter titleCenter306' valign='top'>
+<div class='titleText titleText306'><span>
+产品展示</span></div>
+</td>
+<td class='titleRight titleRight306' valign='top'>
+</td>
+</tr></table>
+<div class='formBannerOther formBannerOther306'>
+<div class='formBannerMore formBannerMore306' style=''>
+<span style='_display:inline-block;_position:relative;'>
+<a hidefocus='true'  href='pl.jsp'><span>更多&#x3e;&#x3e;</span></a>
+</span>
+</div>
+&nbsp;</div>
+</td>
+<td class='right right306'></td>
+</tr></table>
+<table class='formMiddle formMiddle306' style='' cellpadding='0' cellspacing='0'><tr>
+<td class='formMiddleLeft formMiddleLeft306'></td>
+<td class='formMiddleCenter formMiddleCenter306' valign='top'>
+<div class='formMiddleContent formMiddleContent306  '>
+<div class='productMarqueeForms' newMarqueeToward=1><div class='demo'>
+<div class='demo0' id='demo0306'>
+<div topClassName='top1' topSwitch='on' productId='83' productName='葛根汁' class='productMarqueeForm ' faiWidth='160' faiHeight='73'>
+<div id='m306marqueeProduct83' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=83&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgnL-pnQUoo7yAjQEw7Qk4xwQ!160x160.jpg'  style='width:160px;height:73px;' alt='葛根汁' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='葛根汁' href='pd.jsp?id=83&amp;_pp=3_306' target='_blank'>葛根汁</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='80' productName='至尊葛王' class='productMarqueeForm ' faiWidth='90' faiHeight='160'>
+<div id='m306marqueeProduct80' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=80&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg1OLOnQUo4Mf4_AIwgAU48Qg!160x160.jpg'  style='width:90px;height:160px;' alt='至尊葛王' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王' href='pd.jsp?id=80&amp;_pp=3_306' target='_blank'>至尊葛王</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='79' productName='至尊葛王' class='productMarqueeForm ' faiWidth='160' faiHeight='106'>
+<div id='m306marqueeProduct79' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=79&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgs_LOnQUo96-iwgEwwAc4gAU!160x160.jpg'  style='width:160px;height:106px;' alt='至尊葛王' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王' href='pd.jsp?id=79&amp;_pp=3_306' target='_blank'>至尊葛王</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='5' productName='至尊葛王（喜扣系列）' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m306marqueeProduct5' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=5&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgtaKunQUo2YvZ2AEw1QY4gAU!160x160.jpg'  style='width:160px;height:120px;' alt='至尊葛王（喜扣系列）' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王（喜扣系列）' href='pd.jsp?id=5&amp;_pp=3_306' target='_blank'>至尊葛王（喜扣系列）</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='78' productName='至尊葛王（葛莜系列）' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m306marqueeProduct78' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=78&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgubjOnQUoqPS1igEwgBA4gAw!160x160.jpg'  style='width:160px;height:120px;' alt='至尊葛王（葛莜系列）' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王（葛莜系列）' href='pd.jsp?id=78&amp;_pp=3_306' target='_blank'>至尊葛王（葛莜系列）</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='1' productName='至尊葛王（喜扣系列）' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m306marqueeProduct1' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=1&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg9b-JnQUo54Sr5wcwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='至尊葛王（喜扣系列）' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王（喜扣系列）' href='pd.jsp?id=1&amp;_pp=3_306' target='_blank'>至尊葛王（喜扣系列）</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='75' productName='至尊葛王（葛莜系列）' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m306marqueeProduct75' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=75&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg3LbOnQUolIHRkgEwgBA4gAw!160x160.jpg'  style='width:160px;height:120px;' alt='至尊葛王（葛莜系列）' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王（葛莜系列）' href='pd.jsp?id=75&amp;_pp=3_306' target='_blank'>至尊葛王（葛莜系列）</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='74' productName='至尊葛王（葛莜系列）' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m306marqueeProduct74' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=74&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgnLbOnQUo_53xnwYwgBA4gAw!160x160.jpg'  style='width:160px;height:120px;' alt='至尊葛王（葛莜系列）' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王（葛莜系列）' href='pd.jsp?id=74&amp;_pp=3_306' target='_blank'>至尊葛王（葛莜系列）</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='4' productName='至尊葛王（喜扣系列）' class='productMarqueeForm ' faiWidth='120' faiHeight='160'>
+<div id='m306marqueeProduct4' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=4&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg3aSunQUowP7w6wIwgAU41QY!160x160.jpg'  style='width:120px;height:160px;' alt='至尊葛王（喜扣系列）' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王（喜扣系列）' href='pd.jsp?id=4&amp;_pp=3_306' target='_blank'>至尊葛王（喜扣系列）</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='72' productName='至尊葛王（葛莜系列）' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m306marqueeProduct72' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=72&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgmLXOnQUo3YuQ8wMwgBA4-gg!160x160.jpg'  style='width:160px;height:89px;' alt='至尊葛王（葛莜系列）' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王（葛莜系列）' href='pd.jsp?id=72&amp;_pp=3_306' target='_blank'>至尊葛王（葛莜系列）</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='76' productName='至尊葛王（葛莜系列）' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m306marqueeProduct76' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='http://www.zhizungewang.com/pd.jsp?id=76&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgqrfOnQUorI2DlAcwgBA4gAw!160x160.jpg'  style='width:160px;height:120px;' alt='至尊葛王（葛莜系列）' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王（葛莜系列）' href='http://www.zhizungewang.com/pd.jsp?id=76&amp;_pp=3_306' target='_blank'>至尊葛王（葛莜系列）</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='2' productName='至尊葛王（喜扣系列）' class='productMarqueeForm ' faiWidth='120' faiHeight='160'>
+<div id='m306marqueeProduct2' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=2&amp;_pp=3_306' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAghpuunQUokMGvnQEw4AM4gAU!160x160.jpg'  style='width:120px;height:160px;' alt='至尊葛王（喜扣系列）' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王（喜扣系列）' href='pd.jsp?id=2&amp;_pp=3_306' target='_blank'>至尊葛王（喜扣系列）</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td class='formMiddleRight formMiddleRight306'></td>
+</tr></table>
+<table class='formBottom formBottom306' cellpadding='0' cellspacing='0'><tr><td class='left left306'></td><td class='center center306'></td><td class='right right306'></td></tr></table>
+<div class='clearfloat clearfloat306'></div>
+</div>
+
+
+								</div>
+								<div class="containerFormsCenterMiddle">
+									<div id="middleLeftForms" class="column forms mainForms middleLeftForms" style='display:none'
+										
+									>
+									
+									</div>
+									<div id="middleRightForms" class="column forms mainForms middleRightForms" style='display:none'
+										
+									>
+									
+									</div>	
+								</div>
+								<div id="centerBottomForms" class="column forms mainForms centerBottomForms" >
+									<div id='module322' _indexClass='formIndex1' class='form form322 formIndex1 formStyle3 modulePattern modulePattern64' title='' style='' _side='0' _inTab='0' _inMulMCol='0' _inFullmeasure='0' _autoHeight='1' _global='false' _independent='false' >
+<table class='formTop formTop322' cellpadding='0' cellspacing='0'><tr><td class='left'></td><td class='center'></td><td class='right'></td></tr></table>
+<table class='formBanner formBanner322' cellpadding='0' cellspacing='0'><tr>
+<td class='left left322'></td>
+<td class='center center322' valign='top'>
+<table cellpadding='0' cellspacing='0' class='formBannerTitle formBannerTitle322'><tr>
+<td class='titleLeft titleLeft322' valign='top'>
+</td>
+<td class='titleCenter titleCenter322' valign='top'>
+<div class='titleText titleText322'><span>
+葛根种植基地</span></div>
+</td>
+<td class='titleRight titleRight322' valign='top'>
+</td>
+</tr></table>
+</td>
+<td class='right right322'></td>
+</tr></table>
+<table class='formMiddle formMiddle322' style='' cellpadding='0' cellspacing='0'><tr>
+<td class='formMiddleLeft formMiddleLeft322'></td>
+<td class='formMiddleCenter formMiddleCenter322' valign='top'>
+<div class='formMiddleContent formMiddleContent322  '>
+<div class='productMarqueeForms' newMarqueeToward=0><div class='demo'>
+<div class='demo0' id='demo0322'>
+<div topClassName='top1' topSwitch='on' productId='14' productName='江西2号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct14' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=14&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgzZXOnQUomLq0igcwgBA4-gg!160x160.jpg'  style='width:160px;height:160px;' alt='江西2号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='江西2号种植基地' href='pd.jsp?id=14&amp;_pp=2_322' target='_blank'>江西2号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='41' productName='湖南7号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct41' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=41&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgmqfOnQUogN6xATCAEDj_CA!160x160.jpg'  style='width:160px;height:160px;' alt='湖南7号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='湖南7号种植基地' href='pd.jsp?id=41&amp;_pp=2_322' target='_blank'>湖南7号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='10' productName='江西2号种植基地2' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct10' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=10&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgsYPOnQUozNDdjwUwgBA4-gg!160x160.jpg'  style='width:160px;height:160px;' alt='江西2号种植基地2' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='江西2号种植基地2' href='pd.jsp?id=10&amp;_pp=2_322' target='_blank'>江西2号种植基地2</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='39' productName='湖南7号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m322marqueeProduct39' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=39&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgg6bOnQUo44K6qwQwgAU44AM!160x160.jpg'  style='width:160px;height:160px;' alt='湖南7号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='湖南7号种植基地' href='pd.jsp?id=39&amp;_pp=2_322' target='_blank'>湖南7号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='36' productName='湖南7号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m322marqueeProduct36' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=36&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgxqXOnQUo1rLs2gEwgAU44AM!160x160.jpg'  style='width:160px;height:160px;' alt='湖南7号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='湖南7号种植基地' href='pd.jsp?id=36&amp;_pp=2_322' target='_blank'>湖南7号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='35' productName='湖南7号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m322marqueeProduct35' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=35&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgrKXOnQUohKfRXjCABTjgAw!160x160.jpg'  style='width:160px;height:160px;' alt='湖南7号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='湖南7号种植基地' href='pd.jsp?id=35&amp;_pp=2_322' target='_blank'>湖南7号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='30' productName='湖南7号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m322marqueeProduct30' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=30&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg86POnQUosJ7oyQIwgAU44AM!160x160.jpg'  style='width:160px;height:160px;' alt='湖南7号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='湖南7号种植基地' href='pd.jsp?id=30&amp;_pp=2_322' target='_blank'>湖南7号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='28' productName='江西2号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct28' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=28&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAglaPOnQUo5OvA8wMwgBA4-gg!160x160.jpg'  style='width:160px;height:160px;' alt='江西2号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='江西2号种植基地' href='pd.jsp?id=28&amp;_pp=2_322' target='_blank'>江西2号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='37' productName='湖南7号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m322marqueeProduct37' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=37&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg2aXOnQUo6ez91gQwgAU44AM!160x160.jpg'  style='width:160px;height:160px;' alt='湖南7号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='湖南7号种植基地' href='pd.jsp?id=37&amp;_pp=2_322' target='_blank'>湖南7号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='29' productName='湖南7号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m322marqueeProduct29' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=29&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg0aPOnQUoqYLR-gMwgAU44AM!160x160.jpg'  style='width:160px;height:160px;' alt='湖南7号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='湖南7号种植基地' href='pd.jsp?id=29&amp;_pp=2_322' target='_blank'>湖南7号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='27' productName='江西2号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct27' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=27&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgzZ-OnQUo37iBngcwgBA4-gg!160x160.jpg'  style='width:160px;height:160px;' alt='江西2号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='江西2号种植基地' href='pd.jsp?id=27&amp;_pp=2_322' target='_blank'>江西2号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='26' productName='江西2号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct26' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='http://www.zhizungewang.com/pd.jsp?id=26&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgi5-OnQUoptSYLzCAEDj_CA!160x160.jpg'  style='width:160px;height:160px;' alt='江西2号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='江西2号种植基地' href='http://www.zhizungewang.com/pd.jsp?id=26&amp;_pp=2_322' target='_blank'>江西2号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='25' productName='江西2号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct25' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=25&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgup7OnQUo8P7NhQYwgBA4-gg!160x160.jpg'  style='width:160px;height:160px;' alt='江西2号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='江西2号种植基地' href='pd.jsp?id=25&amp;_pp=2_322' target='_blank'>江西2号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='24' productName='江西2号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct24' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=24&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg953OnQUouZWlkQIwgBA4-gg!160x160.jpg'  style='width:160px;height:160px;' alt='江西2号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='江西2号种植基地' href='pd.jsp?id=24&amp;_pp=2_322' target='_blank'>江西2号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='34' productName='湖南7号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m322marqueeProduct34' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=34&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgmKXOnQUogNnOrAYwgAU44AM!160x160.jpg'  style='width:160px;height:160px;' alt='湖南7号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='湖南7号种植基地' href='pd.jsp?id=34&amp;_pp=2_322' target='_blank'>湖南7号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='23' productName='江西2号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct23' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=23&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgrZzOnQUoqLmJpQQwgBA4-gg!160x160.jpg'  style='width:160px;height:160px;' alt='江西2号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='江西2号种植基地' href='pd.jsp?id=23&amp;_pp=2_322' target='_blank'>江西2号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='22' productName='江西2号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct22' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=22&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg3ZvOnQUotPDWAzCAEDj_CA!160x160.jpg'  style='width:160px;height:160px;' alt='江西2号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='江西2号种植基地' href='pd.jsp?id=22&amp;_pp=2_322' target='_blank'>江西2号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='40' productName='湖南7号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct40' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=40&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgzabOnQUo5MLy4gEwgBA4-gg!160x160.jpg'  style='width:160px;height:160px;' alt='湖南7号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='湖南7号种植基地' href='pd.jsp?id=40&amp;_pp=2_322' target='_blank'>湖南7号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='21' productName='江西2号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct21' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=21&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg7JrOnQUolrev4gEwgBA4-gg!160x160.jpg'  style='width:160px;height:160px;' alt='江西2号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='江西2号种植基地' href='pd.jsp?id=21&amp;_pp=2_322' target='_blank'>江西2号种植基地</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='20' productName='江西2号种植基地' class='productMarqueeForm ' faiWidth='160' faiHeight='89'>
+<div id='m322marqueeProduct20' class='imgDiv' style='width:160px;height:160px;'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=20&amp;_pp=2_322' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgn5rOnQUowMbvhAUwgBA4-gg!160x160.jpg'  style='width:160px;height:160px;' alt='江西2号种植基地' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='江西2号种植基地' href='pd.jsp?id=20&amp;_pp=2_322' target='_blank'>江西2号种植基地</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td class='formMiddleRight formMiddleRight322'></td>
+</tr></table>
+<table class='formBottom formBottom322' cellpadding='0' cellspacing='0'><tr><td class='left left322'></td><td class='center center322'></td><td class='right right322'></td></tr></table>
+<div class='clearfloat clearfloat322'></div>
+</div>
+
+
+								</div>
+							</td>
+
+							<td valign="top" id="containerFormsRight" class="containerFormsRight" style='display:none'>
+								<div class="containerFormsRightTop">
+								</div>
+								<div id="rightForms" class="column forms sideForms rightForms">
+									
+								</div>
+								<div class="containerFormsRightBottom">
+								</div>
+							</td>
+						</tr>
+					</table>
+
+					<div id="bottomForms" class="column forms mainForms bottomForms" >
+						<div id='module323' _indexClass='formIndex1' class='form form323 formIndex1 formStyle3 modulePattern modulePattern64' title='' style='' _side='0' _inTab='0' _inMulMCol='0' _inFullmeasure='0' _autoHeight='1' _global='false' _independent='false' >
+<table class='formTop formTop323' cellpadding='0' cellspacing='0'><tr><td class='left'></td><td class='center'></td><td class='right'></td></tr></table>
+<table class='formBanner formBanner323' cellpadding='0' cellspacing='0'><tr>
+<td class='left left323'></td>
+<td class='center center323' valign='top'>
+<table cellpadding='0' cellspacing='0' class='formBannerTitle formBannerTitle323'><tr>
+<td class='titleLeft titleLeft323' valign='top'>
+</td>
+<td class='titleCenter titleCenter323' valign='top'>
+<div class='titleText titleText323'><span>
+公司生产部</span></div>
+</td>
+<td class='titleRight titleRight323' valign='top'>
+</td>
+</tr></table>
+</td>
+<td class='right right323'></td>
+</tr></table>
+<table class='formMiddle formMiddle323' style='' cellpadding='0' cellspacing='0'><tr>
+<td class='formMiddleLeft formMiddleLeft323'></td>
+<td class='formMiddleCenter formMiddleCenter323' valign='top'>
+<div class='formMiddleContent formMiddleContent323  '>
+<div class='productMarqueeForms' newMarqueeToward=1><div class='demo'>
+<div class='demo0' id='demo0323'>
+<div topClassName='top1' topSwitch='on' productId='69' productName='生产车间' class='productMarqueeForm ' faiWidth='120' faiHeight='160'>
+<div id='m323marqueeProduct69' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=69&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgyrDOnQUowLvVugUw0AU4wAc!160x160.jpg'  style='width:120px;height:160px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=69&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='68' productName='生产车间' class='productMarqueeForm ' faiWidth='120' faiHeight='160'>
+<div id='m323marqueeProduct68' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=68&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAguLDOnQUogMGu9wYw0AU4wAc!160x160.jpg'  style='width:120px;height:160px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=68&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='67' productName='生产车间' class='productMarqueeForm ' faiWidth='120' faiHeight='160'>
+<div id='m323marqueeProduct67' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=67&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgqLDOnQUo3rLepQIw0AU4wAc!160x160.jpg'  style='width:120px;height:160px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=67&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='66' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct66' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=66&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgmbDOnQUozrG3rAEwwAc40AU!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=66&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='65' productName='生产车间' class='productMarqueeForm ' faiWidth='120' faiHeight='160'>
+<div id='m323marqueeProduct65' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=65&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgibDOnQUonLDEgQMw0AU4wAc!160x160.jpg'  style='width:120px;height:160px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=65&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='64' productName='生产车间 ' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct64' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=64&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg5K-OnQUo86XVugQwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间 ' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间 ' href='pd.jsp?id=64&amp;_pp=2_323' target='_blank'>生产车间 </a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='56' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct56' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=56&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg3K7OnQUottnP6QcwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=56&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='55' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct55' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=55&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgza7OnQUotpbu9gIwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=55&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='54' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct54' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=54&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgv67OnQUo2PaRogYwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=54&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='53' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct53' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=53&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgsa7OnQUo39Cg0wYwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=53&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='52' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct52' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=52&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgoq7OnQUo4JW5vgIwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=52&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='51' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct51' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='http://www.zhizungewang.com/pd.jsp?id=51&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgkK7OnQUoj-LngQUwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='http://www.zhizungewang.com/pd.jsp?id=51&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='50' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct50' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=50&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAggK7OnQUozva8-QUwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=50&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='49' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct49' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='http://www.zhizungewang.com/pd.jsp?id=49&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg6q3OnQUo4N3CuAYwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='http://www.zhizungewang.com/pd.jsp?id=49&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='48' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct48' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=48&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAg163OnQUonYvYugIwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=48&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='47' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct47' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=47&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgxq3OnQUom46KggcwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=47&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='46' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct46' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='http://www.zhizungewang.com/pd.jsp?id=46&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgtq3OnQUok46k-gMwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='http://www.zhizungewang.com/pd.jsp?id=46&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='45' productName='生产车间' class='productMarqueeForm ' faiWidth='120' faiHeight='160'>
+<div id='m323marqueeProduct45' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=45&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgoa3OnQUo4tfX1wIw0AU4wAc!160x160.jpg'  style='width:120px;height:160px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=45&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='44' productName='生产车间' class='productMarqueeForm ' faiWidth='160' faiHeight='120'>
+<div id='m323marqueeProduct44' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=44&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAgjK3OnQUo9JvHlAYwgAU44AM!160x160.jpg'  style='width:160px;height:120px;' alt='生产车间' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='生产车间' href='pd.jsp?id=44&amp;_pp=2_323' target='_blank'>生产车间</a></div>
+</div>
+<div topClassName='top1' topSwitch='on' productId='2' productName='至尊葛王（喜扣系列）' class='productMarqueeForm ' faiWidth='120' faiHeight='160'>
+<div id='m323marqueeProduct2' class='imgDiv'>
+<table cellpadding='0' cellspacing='0'>
+<tr>
+<td valign='middle' align='center'>
+<a hidefocus='true' href='pd.jsp?id=2&amp;_pp=2_323' target='_blank'>
+<img src='http://3528627.s21i-3.faidns.com/2/ABUIABACGAAghpuunQUokMGvnQEw4AM4gAU!160x160.jpg'  style='width:120px;height:160px;' alt='至尊葛王（喜扣系列）' title=''/>
+</a></td>
+</tr>
+</table>
+</div>
+<div class='propDiv productName propWordWrapDiv' style='text-align:center'><a hidefocus='true' title='至尊葛王（喜扣系列）' href='pd.jsp?id=2&amp;_pp=2_323' target='_blank'>至尊葛王（喜扣系列）</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+<td class='formMiddleRight formMiddleRight323'></td>
+</tr></table>
+<table class='formBottom formBottom323' cellpadding='0' cellspacing='0'><tr><td class='left left323'></td><td class='center center323'></td><td class='right right323'></td></tr></table>
+<div class='clearfloat clearfloat323'></div>
+</div>
+
+
+					</div>
+
+					<div id="containerPlaceholder" class="containerPlaceholder" ></div>
+					
+				</div>
+
+				<div id="containerMiddleCenterBottom" class="containerMiddleCenterBottom">
+				</div>
+
+			</td>
+
+			<td id="containerMiddleRight" class="containerMiddleRight"></td>
+		</tr>
+	</table>
+	
+	<table class="containerBottom" cellpadding='0' cellspacing='0'>
+		<tr valign='top'>
+			<td class="left"></td>
+			<td class="center"></td>
+			<td class="right"></td>
+		</tr>
+	</table>
+</div>
+
+					</div>
+				</td>
+			</tr>
+		</table>		
+
+		<div id="fullmeasureBottomForms" class="fullmeasureContainer forms sideForms fullmeasureForms fullmeasureBottomForms" style='display:none'>
+			
+		</div>
+		
+		<table class="absBottomTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center">
+					<div id="absBottomForms" class="forms sideForms absForms">
+						<div style="position:absolute;"></div><!-- for ie6 -->
+						
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<table id="webFooterTable" class="webFooterTable" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top">
+					<div id="webFooter" class="webFooter">
+						
+
+
+
+
+<div id="footer" class="footer" >
+	<table class="footerTop" cellpadding="0" cellspacing="0">
+		<tr valign="top">
+			<td class="topLeft"></td>
+			<td class="topCenter"></td>
+			<td class="topRight"></td>
+		</tr>
+	</table>
+	<table class="footerMiddle" cellpadding="0" cellspacing="0">
+		<tr valign="top">
+			<td class="middleLeft"></td>
+			<td class="middleCenter" align="center">
+				<div class="footerContent">
+			<div id='footerNav' class='footerNav  footerPattern1' cusheight='0'>
+				<div class='footerItemListBox'>
+					<ul class='footerItemListContainer'>
+				<li class='footerItemSection'>
+					<table class='footerItemContainer'>
+						<tr>
+							<td class='footerItemContainer-firstTd'>
+								<div class='footerItemPic'>
+									<a href='javascript:;' class='footerItemNormalPic ' id='footerItemPic2' >
+									</a>
+								</div>
+							</td>
+							<td class='footerItemContainer-secondTd'>
+								<div class='footerItemContent'>
+									<div class='footerItemTop'>
+										<a class='footerItemTopLink' href='index.html'  child='0'>首页</a>
+
+													</div>
+												<div class="footerItemMiddle"><div class="footSplitline"></div></div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</li><li class='footerItemSpacing'>
+					<div class='footerVerticalLine'></div>
+			</li><li class='footerItemSection'>
+					<table class='footerItemContainer'>
+						<tr>
+							<td class='footerItemContainer-firstTd'>
+								<div class='footerItemPic'>
+									<a href='javascript:;' class='footerItemNormalPic ' id='footerItemPic101' >
+									</a>
+								</div>
+							</td>
+							<td class='footerItemContainer-secondTd'>
+								<div class='footerItemContent'>
+									<div class='footerItemTop'>
+										<a class='footerItemTopLink' href='col.jsp?id=101'  child='0'>关于我们</a>
+
+													</div>
+												<div class="footerItemMiddle"><div class="footSplitline"></div></div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</li><li class='footerItemSpacing'>
+					<div class='footerVerticalLine'></div>
+			</li><li class='footerItemSection'>
+					<table class='footerItemContainer'>
+						<tr>
+							<td class='footerItemContainer-firstTd'>
+								<div class='footerItemPic'>
+									<a href='javascript:;' class='footerItemNormalPic ' id='footerItemPic102' >
+									</a>
+								</div>
+							</td>
+							<td class='footerItemContainer-secondTd'>
+								<div class='footerItemContent'>
+									<div class='footerItemTop'>
+										<a class='footerItemTopLink' href='col.jsp?id=102'  child='0'>联系我们</a>
+
+													</div>
+												<div class="footerItemMiddle"><div class="footSplitline"></div></div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</li>
+		</ul>
+	</div>
+</div>
+
+					<div class="footerInfo">
+						<font face='Arial'>©</font>2015&nbsp;zhizungewang&nbsp;版权所有
+					</div>
+
+					<div class="footerSupport">
+
+<span class='footerFaisco'>技术支持：<a hidefocus='true' href='http://jz.faisco.com/?_ta=45' onclick='Site.logDog(100065, 1);' target='_blank'>凡科建站</a></span>
+<span class='footerSep'>|</span>
+<span class='footerMobile'><a hidefocus='true' href='http://m.zhizungewang.com' target='_blank'>手机版</a></span>
+<span class='footerSep'>|</span>
+<span id='footerLogin' class='footerLogin'><a name='popupLogin' hidefocus='true' href='javascript:;' onclick='Site.popupLogin("http://www.faisco.cn",3528627);Fai.closeTip("#footerLogin");return false;'>管理登录</a></span>
+
+						<span class="bgplayerButton" id="bgplayerButton" style="display:none;"></span>
+					</div>
+					
+					
+					
+				</div>
+			</td>
+			<td class="middleRight"></td>
+		</tr>
+	</table>
+	<table class="footerBottom" cellpadding='0' cellspacing='0'>
+		<tr valign='top'>
+			<td class="bottomLeft"></td>
+			<td class="bottomCenter"></td>
+			<td class="bottomRight"></td>
+		</tr>
+	</table>	
+
+</div>
+						
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<div class="clearfloat"></div>
+	</div>	
+</div>
+
+
+
+
+<div class="floatLeftTop">
+	<div id="floatLeftTopForms" class="forms sideForms floatForms">
+		
+	</div>
+</div>
+<div class="floatRightTop">
+	<div id="floatRightTopForms" class="forms sideForms floatForms">
+		<div id='module308' _indexClass='formIndex1' class='form form308 formIndex1 formStyle40' title='' style='position:absolute;top:17px;left:0px;width:173px;' _side='1' _inTab='0' _inMulMCol='0' _inFullmeasure='0' _autoHeight='0' _global='true' _independent='false' >
+<table class='formTop formTop308' cellpadding='0' cellspacing='0'><tr><td class='left'></td><td class='center'></td><td class='right'></td></tr></table>
+<table class='formBanner formBanner308' cellpadding='0' cellspacing='0'><tr>
+<td class='left left308'></td>
+<td class='center center308' valign='top'>
+<table cellpadding='0' cellspacing='0' class='formBannerTitle formBannerTitle308'><tr>
+<td class='titleLeft titleLeft308' valign='top'>
+</td>
+<td class='titleCenter titleCenter308' valign='top'>
+<div class='titleText titleText308'><span>
+在线客服</span></div>
+</td>
+<td class='titleRight titleRight308' valign='top'>
+</td>
+</tr></table>
+<div class='formBannerOther formBannerOther308'>
+<div class='formBannerBtn formBannerBtn308'>
+<span style='_display:inline-block;_position:relative;'><a hidefocus='true' href='javascript:;' onclick='Site.closeAd("module308");return false;' class='g_close'><span style='_display:none;' >&nbsp;</span></a>
+</span></div>
+&nbsp;</div>
+</td>
+<td class='right right308'></td>
+</tr></table>
+<table class='formMiddle formMiddle308' style='height:232px; ' cellpadding='0' cellspacing='0'><tr>
+<td class='formMiddleLeft formMiddleLeft308'></td>
+<td class='formMiddleCenter formMiddleCenter308' valign='top'>
+<div class='formMiddleContent formMiddleContent308  '>
+<div id='serOnline-container308' class='serOnline-container'><div class='serOnline-service'><div class='serOnline-list-v lineH-21 '><a hidefocus='true' href='http://wpa.qq.com/msgrd?v=3&uin=286517247&site=qq&menu=yes' target='_blank'><span class='serOnline-img qqImg' >&nbsp;</span>客服一（徐先生）</a></div><div class='serOnline-list-v lineH-21 '><a hidefocus='true' href='http://wpa.qq.com/msgrd?v=3&uin=1624378031&site=qq&menu=yes' target='_blank'><span class='serOnline-img qqImg' >&nbsp;</span>客服二（王小姐）</a></div><div class='serOnline-list-v lineH-21 lastData'><a hidefocus='true' href='http://wpa.qq.com/msgrd?v=3&uin=33910983&site=qq&menu=yes' target='_blank'><span class='serOnline-img qqImg' >&nbsp;</span>客服三（丁先生）</a></div></div><div class='serOnline-separation-line g_separator'></div><div class='serOnline-contact'><div class='marBL-10'><span class='contact-header-img'>&nbsp;</span><span style='font-size:15px;'><b>联系方式</b></span></div><div class='serOnline-list-v'><span>丁先生：15111160971</span></div></div></div></div>
+</td>
+<td class='formMiddleRight formMiddleRight308'></td>
+</tr></table>
+<table class='formBottom formBottom308' cellpadding='0' cellspacing='0'><tr><td class='left left308'></td><td class='center center308'></td><td class='right right308'></td></tr></table>
+<div class='clearfloat clearfloat308'></div>
+</div>
+
+
+	</div>
+</div>
+<div class="floatLeftBottom">
+	<div id="floatLeftBottomForms" class="forms sideForms floatForms">
+		
+	</div>
+</div>
+<div class="floatRightBottom">
+	<div id="floatRightBottomForms" class="forms sideForms floatForms">
+		<div id='module325' _indexClass='formIndex1' class='form form325 formIndex1 formStyle33 modulePattern modulePattern66' title='' style='position:absolute;top:-267px;left:0px;width:273px;' _side='1' _inTab='0' _inMulMCol='0' _inFullmeasure='0' _autoHeight='0' _global='false' _independent='false' >
+<table class='formTop formTop325' cellpadding='0' cellspacing='0'><tr><td class='left'></td><td class='center'></td><td class='right'></td></tr></table>
+<table class='formBanner formBanner325' cellpadding='0' cellspacing='0'><tr>
+<td class='left left325'></td>
+<td class='center center325' valign='top'>
+<table cellpadding='0' cellspacing='0' class='formBannerTitle formBannerTitle325'><tr>
+<td class='titleLeft titleLeft325' valign='top'>
+</td>
+<td class='titleCenter titleCenter325' valign='top'>
+<div class='titleText titleText325'><span>
+校园代购代送网</span></div>
+</td>
+<td class='titleRight titleRight325' valign='top'>
+</td>
+</tr></table>
+<div class='formBannerOther formBannerOther325'>
+<div class='formBannerBtn formBannerBtn325'>
+<span style='_display:inline-block;_position:relative;'><a hidefocus='true' href='javascript:;' onclick='Site.closeAd("module325");return false;' class='g_close'><span style='_display:none;' >&nbsp;</span></a>
+</span></div>
+&nbsp;</div>
+</td>
+<td class='right right325'></td>
+</tr></table>
+<table class='formMiddle formMiddle325' style='height:162px; ' cellpadding='0' cellspacing='0'><tr>
+<td class='formMiddleLeft formMiddleLeft325'></td>
+<td class='formMiddleCenter formMiddleCenter325' valign='top'>
+<div class='formMiddleContent formMiddleContent325  '>
+<div class='link-p-container'><table cellpadding='0' cellspacing='0'><tr><td align='center' valign='bottom' style='height:160px;'><a hidefocus='true' class='link-p' href='http://www.daigoudaisong.com' target='_blank'><img style='width:300px;height:160px;' src='http://3528627.s21i-3.faidns.com/3/ABUIABADGAAghdTOnQUoyOHqmgIw6Ac4_gI!450x450.gif' title='' alt='校园代购代送网' /></a></td></tr><tr><td align='center'><a hidefocus='true' class='link-h' href='http://www.daigoudaisong.com' target='_blank'>校园代购代送网</a></td></tr></table></div></div>
+</td>
+<td class='formMiddleRight formMiddleRight325'></td>
+</tr></table>
+<table class='formBottom formBottom325' cellpadding='0' cellspacing='0'><tr><td class='left left325'></td><td class='center center325'></td><td class='right right325'></td></tr></table>
+<div class='clearfloat clearfloat325'></div>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+	
+
+	<div id="bgMusic"  class="bgMusic">
+	
+	</div>
+	
+
+
+<script type="text/javascript" src="http://0.ss.faidns.com/js/comm/jquery/jquery-core.min.js?v=201410271750"></script>
+<script type="text/javascript" src="http://0.ss.faidns.com/js/comm/jquery/jquery-mousewheel.min.js?v=201408111734"></script>
+<script type="text/javascript" src="http://0.ss.faidns.com/js/comm/fai.min.js?v=201502091723"></script>
+<script type="text/javascript" src="http://0.ss.faidns.com/js/comm/jquery/jquery-ui-core.min.js?v=201502021742"></script>
+<script type="text/javascript" src="http://0.ss.faidns.com/js/site.min.js?v=201503041101"></script>
+<script type="text/javascript" src="http://0.ss.faidns.com/js/locale/2052.min.js?v=201502091723"></script>
+<script type="text/javascript" src="http://0.ss.faidns.com/js/comm/ZeroClipboard/ZeroClipboard.min.js?v=201212061014"></script>
+
+
+
+
+
+
+<script type="text/javascript">
+var _faiAjax = function(){
+	//for regexp
+	var r = /\?/;
+	var _o = {
+		type:"get",
+		url:"",
+		data:"",
+		error:function(){},
+		success:function(){}
+	};
+	var _sendRequest=function(o) {
+		var xmlhttp = null;
+		//init option code
+		o.type = o.type || _o.type;
+		o.url = o.url || _o.url;
+		o.data = o.data || _o.data;
+		o.error = o.error || _o.error;
+		o.success = o.success || _o.success;
+		if (window.XMLHttpRequest) {
+			// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp=new XMLHttpRequest();
+		}else{
+			// code for IE6, IE5
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		//the instructions param takes the form of an eval statement
+		if(o.type != "post") {
+			o.url += ( this.r.test( o.url ) ? "&" : "?" ) + o.data;
+			xmlhttp.open("GET", o.url, true);
+				xmlhttp.onreadystatechange=function() {
+				if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+					o.success( xmlhttp.responseText );
+				}else if( o.error ){
+					o.error();
+				}
+			}
+			xmlhttp.send();
+		} else {
+			xmlhttp.open("POST", o.url, true);
+			//Send the proper header information along with the request
+			xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			xmlhttp.onreadystatechange=function() {
+				if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+					o.success( xmlhttp.responseText );
+				}else{
+					o.error();
+				}
+			}
+			xmlhttp.send(o.data);
+		}
+	}
+	return {
+		ajax:function(option){
+			try {
+				//此次调用的错误不让抛出给window。防止函数重入
+				_sendRequest(option);	
+			}catch(e){
+				//alert(e);
+			}
+		}
+	};
+}();
+var _jsErrCahche = [];
+window.onerror = function(sMsg,sUrl,sLine){
+	if (typeof Site == 'undefined') {
+		alert('您的网页未加载完成，请尝试按“CTRL+功能键F5”重新加载。');
+	}
+	if( sLine < 1 || typeof sMsg != 'string' || sMsg.length < 1 ){
+		return;
+	}
+	
+	var log = "Error:" + sMsg + ";Line:" + sLine + ";Url:" + sUrl;
+	var alertLog = "Error:"+sMsg+"\n" + "Line:" + sLine + "\n" + "Url:" + sUrl + "\n";
+	var encodeUrl = function (url){
+		return typeof url === "undefined" ? "" : encodeURIComponent(url);
+	};
+	
+	var ajax = true;
+	var obj = { 'm' : sMsg, 'u' : sUrl, 'l' : sLine };
+	for( var i = 0; i < _jsErrCahche.length; i ++ ){
+		if( _jsErrCahche[i].m == obj.m && _jsErrCahche[i].u == obj.u && _jsErrCahche[i].l == obj.l  ){
+			ajax = false;
+			break;
+		}
+	}
+	
+	if( ajax ){
+		_jsErrCahche.push( obj );
+		_faiAjax.ajax({
+			type	: "post",
+			url		: "ajax/logJsErr_h.jsp?cmd=jsErr",
+			data	: 'msg='+ encodeUrl(log)
+		});
+	}
+	if(false){
+		alert( alertLog );
+	}
+};
+Fai.top = window;
+var bgmCloseToOpen = false;
+var _devMode = false;
+var _colOtherStyleData = {"independentList":[],"y":0,"h":0,"layout4Width":0,"layout5Width":0};						// 当前页面的数据    
+var _templateOtherStyleData = {"independentList":[],"h":676,"y":0,"layout4Width":0,"layout5Width":0};						// 全局的数据   
+$(function() {
+	if(false){
+		Fai.ing("",true);
+	}
+	//topBarMember 
+	
+	
+	// 管理态下, QQ/微博登陆 禁止登陆
+	if( _manageMode ) {
+		$('#memberBar .l_Btn').click(function(){
+			Fai.ing('您目前处于网站管理状态，请先点击网站右上方的“退出”后再登录会员。', true);
+		});
+		//绑定放大镜遮罩效果事件
+		Site.bindEventToOverLayer();		
+	}
+	
+	
+
+	
+	
+	
+	
+	// 绑定退出事件
+	$(window).bind("beforeunload", function(e) { 
+
+		 
+			if(bgmCloseToOpen){
+				Site.bgmFlushContinue();
+			}	
+	
+	
+	
+	
+		
+	});
+	
+
+	Site.initTemplateLayout(0, true, false );
+
+	// spider统计
+	
+
+	
+	// ajax统计
+	Site.total({colId:2, pdId:-1, ndId:-1, sc:0, rf:""});
+	//前端性能数据上报
+	Site.report();
+	//保留旧用户的初始化版式区域4 和区域5 中，区域4的padding-right空间
+	Site.colLayout45Width();
+
+	Site.initCorpTitleJump();
+Site.initBanner({"_open":false}, {"_open":true,"type":49,"position":0,"positionTop":0,"positionLeft":0,"text1":"绿色环保 健康养生","text2":"自定义文字2","style1":"楷体,楷体_GB2312, SimKai","style2":"SimSun","color1":"#003300","color2":"#003300","size1":"60","size2":"30"}, 0);
+
+
+Fai.top.Product306 = {};
+Fai.top.Product306.ieOpt = {"effType":1,"borderType":false,"borderColor":"#000","borderWidth":0,"borderStyle":1,"style":3};
+Fai.top.Product306.tgOpt = {"mallShowBuy":false,"productSelect":true,"targetParent":"productMarqueeForm","target":"imgDiv","propNameShow":true,"productNameShow":true,"productTextCenter":true,"productNameWordWrap":true};
+Fai.top.Product306.callbackArgs = [{"m306marqueeProduct83":"[]","productName":"葛根汁","productBuyBtnText":"购买","productBuyBtnClick":""},{"m306marqueeProduct80":"[]","productName":"至尊葛王","productBuyBtnText":"购买","productBuyBtnClick":""},{"m306marqueeProduct79":"[]","productName":"至尊葛王","productBuyBtnText":"购买","productBuyBtnClick":""},{"m306marqueeProduct5":"[]","productName":"至尊葛王（喜扣系列）","productBuyBtnText":"购买","productBuyBtnClick":""},{"m306marqueeProduct78":"[]","productName":"至尊葛王（葛莜系列）","productBuyBtnText":"购买","productBuyBtnClick":""},{"m306marqueeProduct1":"[]","productName":"至尊葛王（喜扣系列）","productBuyBtnText":"购买","productBuyBtnClick":""},{"m306marqueeProduct75":"[]","productName":"至尊葛王（葛莜系列）","productBuyBtnText":"购买","productBuyBtnClick":""},{"m306marqueeProduct74":"[]","productName":"至尊葛王（葛莜系列）","productBuyBtnText":"购买","productBuyBtnClick":""},{"m306marqueeProduct4":"[]","productName":"至尊葛王（喜扣系列）","productBuyBtnText":"购买","productBuyBtnClick":""},{"m306marqueeProduct72":"[]","productName":"至尊葛王（葛莜系列）","productBuyBtnText":"购买","productBuyBtnClick":""},{"m306marqueeProduct76":"[]","productName":"至尊葛王（葛莜系列）","productBuyBtnText":"购买","productBuyBtnClick":""},{"m306marqueeProduct2":"[]","productName":"至尊葛王（喜扣系列）","productBuyBtnText":"购买","productBuyBtnClick":""}];
+Site.loadProductMarquee(306, true, false, 1);
+Fai.top.changeMarquee306 = function(){Fai.stopInterval('marquee306');Site.loadProductMarquee(306, true, false, 1);};
+
+Fai.top.Product322 = {};
+Fai.top.Product322.ieOpt = {"effType":1,"borderType":false,"borderColor":"#000","borderWidth":0,"borderStyle":1,"style":3};
+Fai.top.Product322.tgOpt = {"mallShowBuy":false,"productSelect":true,"targetParent":"productMarqueeForm","target":"imgDiv","propNameShow":true,"productNameShow":true,"productTextCenter":true,"productNameWordWrap":true};
+Fai.top.Product322.callbackArgs = [{"m322marqueeProduct14":"[]","productName":"江西2号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct41":"[]","productName":"湖南7号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct10":"[]","productName":"江西2号种植基地2","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct39":"[]","productName":"湖南7号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct36":"[]","productName":"湖南7号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct35":"[]","productName":"湖南7号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct30":"[]","productName":"湖南7号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct28":"[]","productName":"江西2号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct37":"[]","productName":"湖南7号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct29":"[]","productName":"湖南7号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct27":"[]","productName":"江西2号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct26":"[]","productName":"江西2号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct25":"[]","productName":"江西2号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct24":"[]","productName":"江西2号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct34":"[]","productName":"湖南7号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct23":"[]","productName":"江西2号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct22":"[]","productName":"江西2号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct40":"[]","productName":"湖南7号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct21":"[]","productName":"江西2号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""},{"m322marqueeProduct20":"[]","productName":"江西2号种植基地","productBuyBtnText":"购买","productBuyBtnClick":""}];
+Site.loadProductMarquee(322, false, true, 0);
+Fai.top.changeMarquee322 = function(){Fai.stopInterval('marquee322');Site.loadProductMarquee(322, false, true, 0);};
+
+Fai.top.Product323 = {};
+Fai.top.Product323.ieOpt = {"effType":1,"borderType":false,"borderColor":"#000","borderWidth":0,"borderStyle":1,"style":3};
+Fai.top.Product323.tgOpt = {"mallShowBuy":false,"productSelect":true,"targetParent":"productMarqueeForm","target":"imgDiv","propNameShow":true,"productNameShow":true,"productTextCenter":true,"productNameWordWrap":true};
+Fai.top.Product323.callbackArgs = [{"m323marqueeProduct69":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct68":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct67":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct66":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct65":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct64":"[]","productName":"生产车间 ","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct56":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct55":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct54":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct53":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct52":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct51":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct50":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct49":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct48":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct47":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct46":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct45":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct44":"[]","productName":"生产车间","productBuyBtnText":"购买","productBuyBtnClick":""},{"m323marqueeProduct2":"[]","productName":"至尊葛王（喜扣系列）","productBuyBtnText":"购买","productBuyBtnClick":""}];
+Site.loadProductMarquee(323, true, false, 1);
+Fai.top.changeMarquee323 = function(){Fai.stopInterval('marquee323');Site.loadProductMarquee(323, true, false, 1);};
+
+
+
+
+	
+
+
+	Site.initPage();	// 这个要放在最后，因为模块组初始化时会把一些模块隐藏，导致没有高度，所以要放最后执行
+
+	
+	
+	
+	setTimeout("afterModuleLoaded()", 0);
+
+	if( _manageMode ) {
+	
+		Site.initManagePage();
+		
+		
+	}
+	
+	if (!_oem && _manageMode) {
+		Site.siteGuideInit();
+		if( false ){
+			$.cookie('_loadedRegStatIframe',true,{ expires: 2 });
+		}
+	}	
+});
+
+function afterModuleLoaded() {
+	Site.initPage2();
+	
+	Site.mallCartInit(_colId);
+} // afterModuleLoaded end
+
+var _portalHost = 'www.faisco.cn';
+
+var _lcid = 2052;
+var _userHostName = 'www.zhizungewang.com';
+var _siteDomain = 'http://www.zhizungewang.com';
+var _signupDays = 268;
+var _cid = 3528627;
+var _resRoot = 'http://0.ss.faidns.com';
+var _colId = 2;
+var _extId = 0;
+var _fromColId = -1;
+var _designAuth = false;
+var _manageMode = false;
+var _oem = false;
+var _siteAuth = 0;
+var _adm = false;
+var _siteVer = 40;
+var _manageStatus = false;
+var nav2SubMenu=[];
+var nav3SubMenu=[];
+var nav4SubMenu=[];
+var nav9SubMenu=[];
+var nav101SubMenu=[];
+var nav102SubMenu=[];
+
+var _customBackgroundData = {"id":"","bBg":{"y":0,"r":3,"f":"","p":"","c":"#000"},"cBg":{"y":0,"r":3,"f":"","p":"","c":"#000"},"s":true,"h":false,"r":3,"o":"","sw":-1,"e":0,"wbh":-1,"wbw":-1,"clw":-1,"crw":-1,"p":"","cmBg":{"y":0,"r":3,"f":"","p":"","c":"#000"}};          //自定义的数据
+var _templateBackgroundData = {"id":"","bBg":{"y":0,"r":3,"f":"","p":"","c":"#000"},"cBg":{"y":0,"r":3,"f":"","p":"","c":"#000"},"s":true,"h":false,"r":3,"o":"","sw":-1,"e":0,"wbh":-1,"wbw":-1,"clw":-1,"crw":-1,"p":"","cmBg":{"y":0,"r":3,"f":"","p":"","c":"#000"}};// 模版的数据
+var _useTemplateBanner = true;				// 是否使用全局模版
+var _templateBannerData = {"ce":{"c1":"#003300","c2":"#003300","t1":"绿色环保 健康养生","sz1":"60","s1":"楷体,楷体_GB2312, SimKai","t2":"自定义文字2","sz2":"30","s2":"SimSun"},"pl":0,"t":49,"o":true,"bt":0,"s":0,"i":4000,"a":1500,"h":false,"p":0,"pt":0,"l":[],"f":{},"n":[],"c":3};		// 模版的数据
+var _pageBannerData = {"s":0,"i":4000,"a":1500,"h":false,"o":false,"t":1,"p":0,"pt":0,"pl":0,"bt":1,"l":[],"f":{},"ce":{},"n":[],"c":3};					// 当前页面的自定义数据（页面独立样式设置）
+var _bannerData = _templateBannerData;
+
+
+var _aid = 3528627;
+var _templateLayout = 0;
+var _webBannerHeight = -1;
+</script>
+
+
+
+</body>
+</html>
+
+
+
